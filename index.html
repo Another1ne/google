@@ -1,0 +1,185 @@
+ <!DOCTYPE html>
+     <head>
+         <meta charset="utf-8">
+         <title>
+             Google
+        </title>
+        <link rel="icon" type="image/x-icon" href="google_favicon_128.png">
+        <style>
+            html {
+                font-family: Arial;
+            }
+            ul {
+             list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #2d2d2d;
+            }
+
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            .setting {
+                float: right;
+                color: #2d2d2d;
+            }
+
+            .setting a:hover {
+                color: #2d2d2d;
+            }
+
+            .more {
+                border-left: 1px #ccc solid;
+                border-right: 1px #ccc solid;
+            }
+
+            .more a:hover {
+                background-color: #ccc;
+            }
+
+            .setting_icon {
+                float: right;
+            }
+
+            li {
+             float: left;
+            }
+
+            .right {
+                float: right;
+                color: #2d2d2d;
+            }
+
+            li a {
+             display: block;
+             color: #cbcbcb;
+             text-align: center;
+             padding: 5px 5px;
+             text-decoration: none;
+             font-size: 13px;
+            }
+
+            li a:hover {
+             background-color: #4c4c4c;
+            }
+
+            .topmenu {
+                background-color: #2d2d2d;
+                color: #2d2d2d;
+                top: 0px;
+            }
+
+            .right li:hover {
+                color: #2d2d2d;
+            }
+
+            .searchred {
+                color: red;
+                background-color: red;
+                border: none;
+                height: 1px;
+            }
+
+            ul ul {
+                position: absolute;
+                top: 25px;
+                display: block;
+            }
+            .lineseparate {
+                color: #fff;
+                background-color: #fff;
+            }
+
+            ul ul li:hover {
+                color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topmenu">
+        <ul>
+        <hr class="searchred" height="1px" width="53px" style="color:red;background-color:red;">
+        <li class=".search"><a class="active" href="#home" style="color:#fff;line-height:16px;"><b>Search</b></a></li>
+        <li style="line-height:16px;"><a href="#">Images</a></li>
+        <li style="line-height:16px;"><a href="#">Maps</a></li>
+        <li style="line-height:16px;"><a href="#">Play</a></li>
+        <li style="line-height:16px;"><a href="#">YouTube</a></li>
+        <li style="line-height:16px;"><a href="#">News</a></li>
+        <li style="line-height:16px;"><a href="#">Gmail</a></li>
+        <li style="line-height:16px;"><a href="#">Drive</a></li>
+        <li id="showmore" class="buttonoption" style="line-height:16px;"><a href="#" onclick="menu()" height="20px" id="shomore">More ▾</a>
+        <ul id="menu" style="display:none;">
+            <div>
+            <div>
+            <li class="more" style="width:150px;background-color:white;border-top: 1px #ccc solid;"><a href="#" style="text-align:left;color:#6188d7;">⠀Calendar⠀⠀⠀</a>
+            </div>
+            <div>
+            <li class="more" style="width:150px;background-color:white;"><a href="#" style="text-align:left;color:#6188d7;">⠀Translate⠀⠀⠀</a>
+            </div>
+            <div>
+            <li class="more" style="width:150px;background-color:white;"><a href="#" style="text-align:left;color:#6188d7;">⠀Books⠀⠀⠀</a>
+            </div>
+            <div>
+            <li class="more" style="width:150px;background-color:white;"><a href="#" style="text-align:left;color:#6188d7;">⠀Shopping⠀⠀⠀</a>
+            </div>
+            <div>
+            <li class="more" style="width:150px;background-color:white;"><a href="#" style="text-align:left;color:#6188d7;">⠀Blogger⠀⠀⠀</a>
+            </div>
+            <div>
+            <li class="more" style="width:150px;background-color:white;"><a href="#" style="text-align:left;color:#6188d7;">⠀Finance⠀⠀⠀</a>
+            </div>
+            <div>
+            <li class="more" style="width:150px;background-color:white;"><a href="#" style="text-align:left;color:#6188d7;">⠀Photos⠀⠀⠀</a>
+            </div>
+            <div>
+            <li class="more" style="width:150px;background-color:white;"><a href="#" style="text-align:left;color:#6188d7;">⠀Videos⠀⠀⠀</a>
+            </div>
+            <div>
+            <div height="10px"></div>
+            <div class="lineseparate" style="">
+                <li><hr style="width:150px;"></li>
+            </div>
+            <div height="10px"></div>
+            <li class="more" class="buttonoption" style="width:150px;background-color:white;border-bottom:1px #ccc solid;"><a href="#" style="text-align:left;color:#6188d7;">⠀Even more »⠀⠀⠀</a></li>
+            </div>
+            </div>
+        </ul>
+        </li>
+        <li class="setting" width="16px" height="16px"><a href="#"><img class="setting_icon" id="settings" src="setting_white.png" width="16px" height="16px"></img></a></li>
+        <li class="setting"><a href="#"><img class="right_divider" id="right_divider" src="divider.png" height="16px"></img></a></li>
+        <li class="right"><a href="#"><b>Sign In</b></a></li>
+        </ul>
+        </div>
+        <center>
+            <div style="position:relative;top:50px;"><div style="height:110px;width:276px;position:relative;background:url('logo9w.png') no-repeat"></div><div nowrap="" style="color:#777;font-size:16px;font-weight:bold;position:relative;top:-40px;left:95px">UK</div></div>
+            <div style="position:relative;top:60px;">
+            <div>
+            <input style="height:30px;width:500px;"></input>
+            <a href="#">Advanced Search</a>
+            <a href="#">Language Tools</a>
+            </div>
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+            <p>See the creativity within code.</p><a href="#">Visit the Google DevArt Gallery</a>
+            <a href="#">Advertising Programmes</a><a href="#">Business Solutions</a><a href="#">+Google</a><a href="#">About Google</a><a href="#">Google.com</a>
+            <p>© 2013 - </p><a href="#">Privacy & Terms</a>
+            </div>
+        </center>
+        <script>
+            function menu() {
+                if (document.getElementById('menu').style.display === "none") {
+                    document.getElementById('menu').style.display = "block";
+                    document.getElementById('showmore').style.backgroundColor = "white";
+                    document.getElementById('shomore').style.color = "#6188d7";
+                } else {
+                    document.getElementById('menu').style.display = "none";
+                    document.getElementById('showmore').style.backgroundColor = "#2d2d2d";
+                    document.getElementById('shomore').style.color = "#cbcbcb"
+                }
+            }
+        </script>
+    </body>
+</html>
